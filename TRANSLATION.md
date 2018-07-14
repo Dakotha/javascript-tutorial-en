@@ -1,13 +1,6 @@
 
-# The JavaScript Tutorial
+# Kurs JavaScript
 
-This repository hosts the translation of the [Modern JavaScript Tutorial](https://javascript.info).
+Repozytorium przechowuje polskie (wolne) tłumaczenie kursu "Modern JavaScript Tutorial", opublikowanego pod adresm: [https://javascript.info](https://javascript.info).
 
-The full list of translations and leads is at <https://github.com/iliakan/javascript-tutorial-en>.
-
-Please contact the translation lead for any questions. 
-Contact @iliakan there's no answer or the translation appears to be stalled. 
-
-If there are other translators, notify them (create an issue?) when you're taking a chapter.
-
-
+Pełną listę tłumaczeń znajdziesz pod adresem: <https://github.com/iliakan/javascript-tutorial-en>.
