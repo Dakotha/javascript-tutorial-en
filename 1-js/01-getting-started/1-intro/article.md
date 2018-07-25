@@ -41,27 +41,28 @@ Silniki są skomplikowane. Jednak założenia działania bardzo proste.
 W silnikach stosuje się optymalizację na każdym poziomie tego procesu. Obserwują one działające skrypty, analizują dane i na ich podstawie wykonują kod najlepiej i najszybciej jak to możliwe.
 ```
 
-## What can in-browser JavaScript do?
+## Co JavaScript potrafi zrobić w przeglądarce?
 
-The modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+Nowoczesny JavaScript jest "bezpiecznym" językiem programowania. Nie umożliwia niskopoziomowego dostępu do pamięci czy procesora komputerowego, ponieważ został zaprojektowany do działania w przeglądarkach.
 
-The capabilities greatly depend on the environment that runs JavaScript. For instance, [Node.JS](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests etc.
+Zdolności i możliwości języka zależą od środowiska w którym jest uruchomiony. Na przykład [Node.JS](https://wikipedia.org/wiki/Node.js) oferuję funkcje które umożliwiają JavaScript'owi czytanie i zapisywanie plików, obsługę sieci itp.
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user and the webserver.
+W przeglądarce JavaScript może zrobić wszystko co jest związane z manipulacją drzewem DOM, interakcją z użytkownikiem itp.
 
-For instance, in-browser JavaScript is able to:
+Na przykład, w przeglądarce JavaScript potrafi:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+- Dodać nowy tag HTML do strony, zmienić zawartość strony, zmodyfikować style.
+- Reagować na akcję użytkownika, takie jak kliknięcie czy ruch myszą lub naciśniecie przycisku klawiatury.
+- Wysłać zapytanie do serwera, ściągać i wysyłać pliki ([AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) i [COMET](https://en.wikipedia.org/wiki/Comet_(programming))).
+- Pobrać i ustawić ciasteczka, zadać pytanie odwiedzającemu, wyświetlić wiadomość.
+- Zapamiętać dane po stronie klienta ("local storage").
 
-## What CAN'T in-browser JavaScript do?
+## Czego JavaScript nie potrafi zrobić w przeglądarce?
 
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+Możliwości JavaScript w przeglądarce są ograniczone z powodów bezpieczeństwa. Celem jest ochrona użytkownika przed diabelskimi zakusami niektórych stron internetowych na zdobycie poufnych informacji.
 
-The examples of such restrictions are:
+Przykładem takich restrykcji mogą być:
+- Kod JavaScript na stronie internetowej nie może czytać i zapisywać plików na dysk twardy komputera. Nie może kopiować ich ani uruchamiać programów.
 
 - JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS system functions.
 
