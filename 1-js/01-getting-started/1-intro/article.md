@@ -1,44 +1,44 @@
-# An Introduction to JavaScript
+# Wstęp do JavaScript
 
-Let's see what's so special about JavaScript, what we can achieve with it and which other technologies play well with it.
+Dlaczego JavaScript jest wyjątkowy? Co możemy zrobić dzięki JavaScript i pokrewnym technologiom? Aby się tego dowiedzieć czytaj dalej.
 
-## What is JavaScript?
+## Czym jest JavaScript?
 
-*JavaScript* was initially created to *"make webpages alive"*.
+*JavaScript* początkowo był stworzony aby *"ożywić strony internetowe"*.
 
-The programs in this language are called *scripts*. They can be written right in the HTML and execute automatically as the page loads.
+Programy napisane w tym języku są nazywane *skryptami*. Mogą być pisane wewnątrz kodu HTML i wykonywane są automatycznie po odświeżeniu strony.
 
-Scripts are provided and executed as a plain text. They don't need a special preparation or a compilation to run.
+Skrypty to zwykły tekst. Nie wymagają specjalnego przygotowania czy kompilacji przed uruchomieniem.
 
-In this aspect, JavaScript is very different from another language called [Java](http://en.wikipedia.org/wiki/Java).
+Pod tym względem, JavaScript bardzo różni się od innego, bardzo popularnego języka  [Java](http://en.wikipedia.org/wiki/Java)
 
 ```smart header="Why <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java language was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+Gdy tworzono JavaScript, nadano mu nazwę "LiveScript". Jednak w tym czasie Java była bardzo popularnym językiem, dlatego zdecydowano promować JavaScript jako młodszego brata Javy, z nadzieją na szybsze wybicie się z nowym produktem na rynku.
 
-But as it evolved, JavaScript became a fully independent language, with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+JavaScript szybko ewoluował i rozwijał się. Wkrótce stał się całkowicie niezależnym językiem, ze swoją własną specyfikacją nazwaną [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript) i obecnie nie ma absolutnie żadnych powiązań z Javą.
 ```
 
-At present, JavaScript can execute not only in the browser, but also on the server, or actually on any device where there exists a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+Obecnie, skrypty JavaScript mogą być wykonywane także poza przeglądarką. Po stronie serwera lub na każdym innym urządzeniu wyposażonym w tak zwany [Silnik Javascript](https://en.wikipedia.org/wiki/JavaScript_engine).
 
-The browser has an embedded engine, sometimes it's also called a "JavaScript virtual machine".
+Przeglądarki mają osadzone silniki, czasem nazywane "Wirtualną Maszyną JavaScript"
 
-Different engines have different "codenames", for example:
+Różne silniki mają różne nazwy, np:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident", "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari etc.
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- występuje w Chrome i Operze.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- występuje w Firefox.
+- ...a także inne pod nazwami takimi jak "Trident", "Chakra" przeznaczone dla różnych wersji Internet Explorer, "ChakraCore" dla Edge, "Nitro" i "SquirrelFish" dla Safari itp.
 
-The terms above are good to remember, because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+Pojęcia użyte powyżej warto zapamiętać, ponieważ są często używane przez developerów w artykułach czy tekstach w internecie. W tej książce także będą używane. Na przykład, jeśli "właściwość X jest obsługiwana przez V8", prawdopodobnie będzie działała w przeglądarce Chrome i Opera.
+
 
 ```smart header="How engines work?"
+Silniki są skomplikowane. Jednak założenia działania bardzo proste.
 
-Engines are complicated. But the basics are easy.
+1. Silnik (wbudowany, jeśli mówimy o przeglądarce) czyta ("parsuje") skrypt.
+2. Następnie konwertuje ("kompiluje") treść skryptu na język maszynowy.
+3. I w tej chwili skrypt może zostać uruchomiony.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
-
-The engine applies optimizations on every stage of the process. It even watches the compiled script as it runs, analyzes the data that flows through it and applies optimizations to the machine code based on that knowledge. At the end, scripts are quite fast.
+W silnikach stosuje się optymalizację na każdym poziomie tego procesu. Obserwują one działające skrypty, analizują dane i na ich podstawie wykonują kod najlepiej i najszybciej jak to możliwe.
 ```
 
 ## What can in-browser JavaScript do?
